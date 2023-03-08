@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up Page</title>
+    <link rel="stylesheet"  type="text/css" href="style.css">
+    <script src="scriptup.js"></script>
+    
+</head>
+<body >
+    
+    
+    <div class="box">
+   <div id="msg">
+    <h2>Create an account</h2>
+    <span id = "error" ></span>
+    </div>
+
+    <form  onsubmit ="return verifyPassword()">
+        <div>
+            
+            <input type="text"
+                   name="fullName"
+                   id="name"
+                   placeholder="Full Name">
+            </div>
+            <br>
+
+            <div>
+                <input type="email" 
+                       name="email"
+                       id="mail"
+                       placeholder="Email Address">
+            </div>
+            <br>
+            
+               <!-- <div>
+                    
+                    <input type="text" name="birthday"
+                    placeholder="Birthday">
+                    <div class="birthday">
+                        Note: in dd/mm/yyyy format
+                    </div>
+                    
+                </div>-->
+                
+
+                <div>
+                    
+                    <input type="password" 
+                           name="password" 
+                           placeholder="Password" 
+                           id="myp">
+                           <div id="length" class="invalid">Note: should contain atleast 8 characters  </div>
+                           
+                    <!--<div class="password">
+                        Note: should contain atleast 8 characters
+                    </div>-->
+                </div><br>
+
+                <div>
+                    <input type="password" 
+                           name="password" 
+                           minlength="8" 
+                           id="mypass"
+                           placeholder="Confirm Password">
+
+                 
+                </div><br>
+
+                <div class="check">
+                    <input type="checkbox"
+                     onclick="toggleVisibility(); vistog();"/>Show Password</br>  
+                </div>
+                <br>
+                <!--<div class="button">
+                    <input type="submit" name="signup" value="Sign Up" >
+                </div>  -->
+                <button type="submit" 
+                        class="btn">
+                    Sign up
+                </button>
+                       
+    </form>
+<br>
+<div class="block">
+    Already a member?
+    <a href="signin.html">Sign in</a>
+</div>
+    </div>
+</body>
+</html>
