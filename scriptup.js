@@ -54,6 +54,7 @@
           document.getElementById("error").innerHTML = "Password and Confirm password doesn't match!";  
           return false; 
         }
+        return true
     }
       
     

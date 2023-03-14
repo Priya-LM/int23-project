@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up Page</title>
-    <link rel="stylesheet"  type="text/css" href="style.css">
-    <script src="scriptup.js"></script>
-    
+    <link rel="stylesheet"  type="text/css" href="css/style.css">
+    <script src="js/scriptup.js"></script>
+    <script src="index.js"></script>
+
 </head>
 <body >
     
@@ -18,11 +19,10 @@
     <span id = "error" ></span>
     </div>
 
-    <form  onsubmit ="return verifyPassword()">
+    <form onSubmit="return verifyPassword()" action="/sign_up" method="post" >
         <div>
-            
             <input type="text"
-                   name="fullName"
+                   name="name"
                    id="name"
                    placeholder="Full Name">
             </div>
@@ -62,7 +62,7 @@
 
                 <div>
                     <input type="password" 
-                           name="password" 
+                           name="confirmPassword" 
                            minlength="8" 
                            id="mypass"
                            placeholder="Confirm Password">
@@ -78,10 +78,10 @@
                 <!--<div class="button">
                     <input type="submit" name="signup" value="Sign Up" >
                 </div>  -->
-                <button type="submit" 
-                        class="btn">
+                <input type="submit" 
+                        class="btn" >
                     Sign up
-                </button>
+            </input>
                        
     </form>
 <br>
